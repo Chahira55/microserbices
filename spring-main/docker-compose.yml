@@ -1,0 +1,43 @@
+version: '3.9'
+
+services:
+
+  mysql:
+    image: mysql
+    ports:
+      - "3306:3306"
+    restart: always
+    environment:
+      MYSQL_USER: chahira
+      MYSQL_PASSWORD: maoua@2022
+      MYSQL_ROOT_PASSWORD: maoua@2023
+      MYSQL_DATABASE: mysql
+    networks:
+      - my-network
+
+  rent:
+    image: rent
+    ports:
+      - "8080:8080"
+#    depends_on:
+#      - mysql
+#      - eurekaserver
+    networks:
+      - my-network
+    environment:
+      SPRING_DATASOURCE_USERNAME: chahira
+      SPRING_DATASOURCE_PASSWORD: maoua@2022
+      SPRING_DATASOURCE_URL: jdbc:mysql://192.168.1.6:3306/mysql
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8761/eureka/
+
+  eurekaserver:
+    image: eurekaserver
+    ports:
+      - "8761:8761"
+    networks:
+      - my-network
+networks:
+      my-network:
+        driver: bridge
+
+
