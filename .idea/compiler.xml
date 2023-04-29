@@ -6,13 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+<<<<<<< HEAD
         <module name="demo" />
+=======
+        <module name="eurika" />
+>>>>>>> 4363b4b2761bf43fb3bff1dfe1c5ab3c6525d02f
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+<<<<<<< HEAD
       <module name="demo" options="-parameters" />
+=======
+      <module name="eurika" options="-parameters" />
+>>>>>>> 4363b4b2761bf43fb3bff1dfe1c5ab3c6525d02f
     </option>
   </component>
 </project>

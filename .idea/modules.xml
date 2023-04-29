@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-main (1).iml" filepath="$PROJECT_DIR$/.idea/spring-main (1).iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/eurika.iml" filepath="$PROJECT_DIR$/.idea/eurika.iml" />
+>>>>>>> 4363b4b2761bf43fb3bff1dfe1c5ab3c6525d02f
     </modules>
   </component>
 </project>

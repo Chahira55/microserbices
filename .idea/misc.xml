@@ -4,7 +4,11 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/spring-main/pom.xml" />
+=======
+        <option value="$PROJECT_DIR$/eurika/pom.xml" />
+>>>>>>> 4363b4b2761bf43fb3bff1dfe1c5ab3c6525d02f
       </list>
     </option>
   </component>
